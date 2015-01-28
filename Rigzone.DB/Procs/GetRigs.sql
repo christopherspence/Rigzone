@@ -1,4 +1,4 @@
-﻿ALTER PROCEDURE [dbo].[GetRigs]
+﻿CREATE PROCEDURE [dbo].[GetRigs]
 	@ID NVARCHAR(MAX) = NULL,
 	@Name NVARCHAR(MAX) = NULL,
 	@Manager NVARCHAR(MAX) = NULL,
