@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Rigzone.Models;
 
-namespace Rigzone.Repositories
+namespace Rigzone.Repositories.Contract
 {
-    public class Class1
+    public interface IRigRepository : IRepository<Rig>
     {
     }
 }

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rigzone.Repositories", "Rig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rigzone.Models", "Rigzone.Models\Rigzone.Models.csproj", "{BCA2A107-77CC-4F03-9F97-4BCDD40D45D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rigzone.DAL", "Rigzone.DAL\Rigzone.DAL.csproj", "{5223F919-BD99-4940-95BA-395A93DFF8A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rigzone.Common", "Rigzone.Common\Rigzone.Common.csproj", "{EB573B17-0F41-4302-A1DE-A20770F85F77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{BCA2A107-77CC-4F03-9F97-4BCDD40D45D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA2A107-77CC-4F03-9F97-4BCDD40D45D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA2A107-77CC-4F03-9F97-4BCDD40D45D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5223F919-BD99-4940-95BA-395A93DFF8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5223F919-BD99-4940-95BA-395A93DFF8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5223F919-BD99-4940-95BA-395A93DFF8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5223F919-BD99-4940-95BA-395A93DFF8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB573B17-0F41-4302-A1DE-A20770F85F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB573B17-0F41-4302-A1DE-A20770F85F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB573B17-0F41-4302-A1DE-A20770F85F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB573B17-0F41-4302-A1DE-A20770F85F77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

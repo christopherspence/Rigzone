@@ -17,6 +17,8 @@ namespace Rigzone.Models
 
         #region Properties
 
+        public RigType RigType { get; set; }
+
         public int WaterDepth 
         { 
             get

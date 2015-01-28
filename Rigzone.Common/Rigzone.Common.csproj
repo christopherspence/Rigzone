@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F95CF582-228E-43E0-AC8E-DD5302D445CF}</ProjectGuid>
+    <ProjectGuid>{EB573B17-0F41-4302-A1DE-A20770F85F77}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rigzone.Repositories</RootNamespace>
-    <AssemblyName>Rigzone.Repositories</AssemblyName>
+    <RootNamespace>Rigzone.Common</RootNamespace>
+    <AssemblyName>Rigzone.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,25 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseRepository.cs" />
-    <Compile Include="Contract\IRepository.cs" />
-    <Compile Include="Contract\IRigRepository.cs" />
+    <Compile Include="Extensions\DataRowExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RigRepository.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Rigzone.Common\Rigzone.Common.csproj">
-      <Project>{eb573b17-0f41-4302-a1de-a20770f85f77}</Project>
-      <Name>Rigzone.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Rigzone.DAL\Rigzone.DAL.csproj">
-      <Project>{5223f919-bd99-4940-95ba-395a93dff8a7}</Project>
-      <Name>Rigzone.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Rigzone.Models\Rigzone.Models.csproj">
-      <Project>{bca2a107-77cc-4f03-9f97-4bcdd40d45d8}</Project>
-      <Name>Rigzone.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
