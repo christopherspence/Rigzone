@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[RigTypes]
+(
+	[RigTypeID] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [RigTypeName] NVARCHAR(50) NOT NULL, 
+    [SortOrder] INT NOT NULL
+)

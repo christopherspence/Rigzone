@@ -57,5 +57,22 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Procs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Countries.sql" />
+    <Build Include="Tables\Organizations.sql" />
+    <Build Include="Tables\Regions.sql" />
+    <Build Include="Tables\Rigs.sql" />
+    <Build Include="Tables\RigTypes.sql" />
+    <Build Include="Procs\GetRigs.sql" />
+    <Build Include="InitialData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Rigzone.DB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rigzone.DB.publish.xml" />
   </ItemGroup>
 </Project>
