@@ -15,7 +15,7 @@ namespace Rigzone.Repositories
     {
         public RigRepository(IUnitOfWork unitOfWork) : base(unitOfWork) { }
 
-        public IEnumerable<Rig> Get()
+        public IEnumerable<Rig> GetAll()
         {
             List<Rig> rigs = new List<Rig>();
 
@@ -31,30 +31,29 @@ namespace Rigzone.Repositories
                     RigType = new RigType
                     {
                         ID = row.AsGuid("RigTypeID"),
-                        Name = row.AsString("RigTypeName"),
-                        SortOrder = row.AsInt("SortOrder")
+                        Name = row.AsString("RigTypeName")
+                        //SortOrder = row.AsInt("SortOrder") // Doesn't come back in proc
                     },
                     DrillingDepth = row.AsInt("DrillingDepth"),
                     WaterDepth = row.AsInt("WaterDepth"),
                     Manager = new Organization
                     {
                         ID = row.AsGuid("ManagerID"),
-                        Name = row.AsString("ManagerName"),
-                        SortOrder = row.AsInt("SortOrder") 
+                        Name = row.AsString("ManagerName")                        
                     },
-                    Location = new Location
+                    CurrentLocation = new Location
                     {
                         Region = new Region 
                         { 
                             ID = row.AsGuid("RegionID"),
-                            Name = row.AsString("RegionName")
+                            Name = row.AsString("RegionName")                                                       
                         },
                         Country = new Country
                         {
                             ID = row.AsGuid("CountryID"),
                             Name = row.AsString("CountryName")
                         },
-                        BlockOrWell = row.AsString("BlockOrWell"),
+                        BlockOrWell = row.AsString("CurrentBlockOrWell"),
                         StartDate = row.AsDate("CurrentStartDate"),
                         EndDate = row.AsNullableDate("CurrentEndDate")
                     }
@@ -64,7 +63,7 @@ namespace Rigzone.Repositories
             return rigs;
         }
 
-        public Rig GetAll(Guid id)
+        public Rig Get(Guid id)
         {
             throw new NotImplementedException();
         }

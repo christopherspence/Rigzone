@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -54,14 +55,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DBTests.cs">
-      <SubType>Designer</SubType>
-    </Compile>
-    <Compile Include="SqlDatabaseSetup.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ModelTests\RigTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryTests\RigRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Rigzone.Common\Rigzone.Common.csproj">
+      <Project>{eb573b17-0f41-4302-a1de-a20770f85f77}</Project>
+      <Name>Rigzone.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rigzone.DAL\Rigzone.DAL.csproj">
+      <Project>{5223f919-bd99-4940-95ba-395a93dff8a7}</Project>
+      <Name>Rigzone.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rigzone.Models\Rigzone.Models.csproj">
       <Project>{bca2a107-77cc-4f03-9f97-4bcdd40d45d8}</Project>
       <Name>Rigzone.Models</Name>
@@ -74,11 +80,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="DBTests.resx">
-      <DependentUpon>DBTests.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

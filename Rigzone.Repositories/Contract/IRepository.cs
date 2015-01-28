@@ -12,14 +12,14 @@ namespace Rigzone.Repositories.Contract
         /// Get all objects
         /// </summary>
         /// <returns></returns>
-        IEnumerable<T> Get();
+        IEnumerable<T> GetAll();
 
         /// <summary>
         /// Get object with specific ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        T GetAll(Guid id);
+        T Get(Guid id);
 
         /// <summary>
         /// Add a new object to the db.

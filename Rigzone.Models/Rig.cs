@@ -43,13 +43,14 @@ namespace Rigzone.Models
             {
                 if (value < 0)
                     throw new ArgumentOutOfRangeException("Drilling Depth cannot be less than zero.");
-         
+
+                _drillingDepth = value;
               }
         }
 
         public Organization Manager { get; set; }
 
-        public Location Location { get; set; }
+        public Location CurrentLocation { get; set; }
 
         // TODO: Future impl.
         // public List<Location> PreviousLocations { get; set; }
